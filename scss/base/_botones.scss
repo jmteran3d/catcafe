@@ -1,0 +1,33 @@
+.btn-principal {
+    width: fit-content;
+    background-color: $color-primario;
+    color: $color-texto2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: darken($color-primario, 10%);
+    }
+}
+
+.btn-secundario {
+    width: fit-content;
+    background-color: $color-primario;
+    color: $color-texto2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: darken($color-primario, 10%);
+    }
+}

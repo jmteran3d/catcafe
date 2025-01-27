@@ -1,0 +1,52 @@
+.navbar {
+  padding: 50px;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-family: "Chewy", serif;
+      color: $color-texto2;
+      font-weight: bold;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+
+    .navbar-toggler {
+      color: $color-secundario;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: $color-texto2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $color-secundario;
+        }
+      }
+    }
+  }
+}

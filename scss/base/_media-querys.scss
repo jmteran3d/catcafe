@@ -1,0 +1,128 @@
+// Variables de breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.hero-section {
+  // Media queries para .hero-section
+  @media (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  @media (max-width: $md) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  @media (max-width: $lg) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+  }
+
+  .texto-hero {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: $xxl) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      @media (max-width: 480px) {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 0.8rem;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 1.1rem;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: $xxl) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .hero-img {
+    @media (max-width: 480px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.navbar {
+  ul {
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $md) {
+      gap: 1.5rem;
+    }
+
+    @media (max-width: $lg) {
+      gap: 2rem;
+    }
+  }
+}
+
+footer {
+  @media (max-width: 480px) {
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: $md) {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  @media (max-width: $lg) {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  @media (max-width: $xxl) {
+    padding: 3rem;
+  }
+}

@@ -1,0 +1,17 @@
+$color-fondo: #fcf8f3;
+$color-texto: #333;
+$color-texto2: #fff;
+$color-primario: #698474;
+$color-secundario: #ffd3b6;
+$color-terciario: #ffcbc8;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.color-principal {
+    background-color: $color-primario;
+}

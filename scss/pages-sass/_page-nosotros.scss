@@ -1,0 +1,42 @@
+/* Variables */
+$padding-main: 50px 5%;
+$card-bg-color: #deaa79;
+$hover-box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.59);
+$card-radius: 20px;
+$image-size: 200px;
+
+/* ESTILOS NOSOTROS*/
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: $padding-main;
+
+  &__card {
+    background-color: $card-bg-color;
+    width: 280px;
+    height: auto;
+    border-radius: $card-radius;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      box-shadow: $hover-box-shadow;
+      transform: translateY(-10px);
+    }
+
+    img {
+      width: $image-size;
+      height: $image-size;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border-radius: $card-radius;
+    }
+  }
+}
