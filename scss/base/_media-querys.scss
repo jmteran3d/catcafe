@@ -6,44 +6,31 @@ $xl: 1200px;
 $xxl: 1400px;
 
 .hero-section {
-  // Media queries para .hero-section
-  @media (max-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (max-width: $sm) {
     padding: 1.5rem;
   }
 
   @media (max-width: 320px) {
-    display: flex;
-    flex-wrap: wrap;
     padding: 1rem;
   }
 
   @media (max-width: $md) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     padding: 3rem;
   }
 
   @media (max-width: $lg) {
-    display: flex;
     flex-wrap: wrap;
     padding: 4rem;
   }
 
   .texto-hero {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-
     h1 {
-      @media (max-width: 480px) {
-        font-size: 1.2rem;
-      }
-
       @media (max-width: 320px) {
         font-size: 1rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
       }
 
       @media (max-width: $sm) {
@@ -60,12 +47,12 @@ $xxl: 1400px;
     }
 
     p {
-      @media (max-width: 480px) {
-        font-size: 0.9rem;
-      }
-
       @media (max-width: 320px) {
         font-size: 0.8rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.9rem;
       }
 
       @media (max-width: $sm) {
@@ -81,11 +68,10 @@ $xxl: 1400px;
       }
     }
   }
-
   .hero-img {
-    @media (max-width: 480px) {
-      width: 100%;
-      height: auto;
+    @media (max-width: $lg) {
+      width: 600px;
+      height: 300px;
     }
   }
 }
@@ -106,10 +92,31 @@ $xxl: 1400px;
   }
 }
 
+.cancion-dia {
+  // Para la vista móvil, se elimina padding
+  @media (max-width: $md) {
+    padding: 0px; // El padding de 0px en la vista móvil
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
+
 footer {
-  @media (max-width: 480px) {
+  
+  @media (max-width: $sm) {
     align-items: center;
     text-align: center;
+    padding: 0.5rem;
+
+    .lado-izq .lado-der {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   @media (max-width: $md) {
